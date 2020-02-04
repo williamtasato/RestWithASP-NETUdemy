@@ -33,6 +33,8 @@ namespace RestWithASPNETUdemy
             services.AddDbContext<MySQLContext>(options => options.UseMySql(connection));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddApiVersioning();
             //Injection Dependency
             services.AddScoped<IPersonService,PersonServiceImpl>();
         }
