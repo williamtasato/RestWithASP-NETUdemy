@@ -1,0 +1,9 @@
+CREATE TABLE users (
+Id INT(10) not null  AUTO_INCREMENT,
+Login VARCHAR(50) UNIQUE NOT NULL,
+AcessKey VARCHAR(50) NOT NULl,
+Primary Key (`Id`)
+)
+ENGINE =InnoDB
+;
+
