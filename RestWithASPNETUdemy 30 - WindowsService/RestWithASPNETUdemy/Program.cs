@@ -40,7 +40,7 @@ namespace RestWithASPNETUdemy
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>().UseUrls(urls: "http://192.168.0.104:5000");
+                .UseStartup<Startup>();
 
     }
 }
